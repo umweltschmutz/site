@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Raphael Beer
+	email = raphael.beer@protonmail.com
+	signingkey = 60309F47B77B62754A7EF3896A0B04528B63E7F1
+[core]
+	editor = sl -w
+[commit]
+	gpgsign = true
+[pgp]
