@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="msapplication-config" content="/site/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-  <link href="main.06f300e3.css" rel="stylesheet"></head>
+  <link href="main.4f56bcea.css" rel="stylesheet"></head>
   <body>
     <div class="navbar-fixed">
       <nav>
@@ -57,11 +57,23 @@
       <ul id="polluters">
         <!-- PolluterCard -->
       </ul>
+      <li>
+        <div class="row">
+          <div class="col s12">
+            <button class="waves-effect waves-green greens-green btn btn-flat modal-trigger" data-target="faqModal">
+              <i class="material-icons">live_help</i>
+            </button>
+          </div>
+        </div>
+      </li>
     </ul>
 
     <main>
       <div class="row">
         <div id="polluter" class="col s12"><!-- PolluterCard --></div>
+      </div>
+      <div class="row">
+        <div id="tripinfo" class="col s12"><!-- TripInfoCard --></div>
       </div>
       <div class="row">
         <div id="comparisons" class="col s12"><!-- ComparisonCarousel --></div>
@@ -98,5 +110,60 @@
         </div>
       </div>
     </footer>
-  <script type="text/javascript" src="babel.f0024c0d.js"></script><script type="text/javascript" src="main.59db0d97.js"></script></body>
+
+    <div id="faqModal" class="modal">
+      <div class="modal-content">
+        <h4>FAQ, Glossar</h4>
+        <ul>
+          <li>
+            <p><b>Wie werden die Flüge berechnet?</b></p>
+            <p>Die Daten für die Flüge sind dem CO<sub>2</sub> Rechner von
+              <a href="https://www.atmosfair.de/de/kompensieren/flug" target="_blank">atmosfair.de</a>
+              entnommen.
+            </p>
+            <p>
+              Sobald Start- und Zielflughafen nicht aus der Quelle hervorgehen, wurden diese geschätzt.
+              Besonders für die häufig unbekannten Startflughäfen wurde der Sitz des jeweiligen Arbeitsortes
+              (z.B. Bundestag - Berlin Tegel für MdB; München für MdL Bayern) zugrunde gelegt.
+            </p>
+            <p><b>CO<sub>2-e</sub></b></p>
+            <p>
+              Alle Vergleiche werden in CO<sub>2</sub> + CO<sub>2</sub> Äquivalenten durchgeführt.
+            </p>
+            <p>
+              CO<sub>2</sub> Äquivalente beschreiben wie viel eine bestimmte Masse eines Treibhausgases
+              im Vergleich zur gleichen Menge CO2 zur globalen Erwärmung beiträgt. So werden z.B.
+              für vergleichende Milchprodukte die Emissionen für Transport, wie auch die Emissionen der
+              Tierhaltung berücksichtigt.
+              <a href="https://de.wikipedia.org/wiki/Treibhauspotential" target="_blank">
+                Weitere Informationen
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-close greens-green waves-effect waves-green btn-flat">Schließen</button>
+      </div>
+    </div>
+
+    <div id="sourceModal" class="modal bottom-sheet modal-fixed-footer">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col s12">
+            <img class="responsive-img" src="" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-close greens-green waves-effect waves-green btn-flat">Schließen</button>
+        <a
+          href=""
+          class="btn greens-green waves-effect waves-green btn-flat"
+          target="_blank"
+        >Original</a>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="babel.8054d2f9.js"></script><script type="text/javascript" src="main.c9566593.js"></script></body>
 </html>
